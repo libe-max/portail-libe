@@ -1,0 +1,45 @@
+// Define everything and import mixins!
+@import 'fonts.less';
+@import 'variables.less';
+@import 'mixins.less';
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'syntheselibeweb', sans-serif;
+
+    section {
+        padding: 50px;
+    }
+
+    a {
+        color: @primary-color;
+    }
+}
+
+body {
+    background-color: @side-color;
+}
+
+// Top section
+@import 'section_head.less';
+
+// Content section
+@import 'section_content.less';
+
+// Utils
+@import 'utils.less';
+
+@media (max-width: 769px) {
+    html, body {
+        section {
+            padding: 1em;
+
+            &:first-of-type {
+                padding-top: 2em;
+            }
+        }
+    }
+}

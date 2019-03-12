@@ -1,0 +1,28 @@
+<!--  Résultats  -->
+<div class="question result">
+    <div flex class="result-top">
+        <div class="result-top__wrapper">
+            <div class="result__title">
+                Score final
+            </div>
+            <div class="result__score">
+                <span class="result__score__inner">
+                    <span class="result__score__inner__current"></span>/<span class="result__score__inner__max"></span>
+                </span>
+            </div>
+            <div class="result__text">
+                <div class="result__text__ok">{{&txtQuizOk}}</div>
+                <div class="result__text__ko">{{&txtQuizNop}}</div>
+            </div>
+            <div class="result__share">
+                <a href="" class="result__tweet__link" rel="XX"><i class="fa fa-fw fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    {{#linkQuiz}}
+    <div class="result__more">
+        <a href="{{&linkQuiz}}" target="_blank">À lire aussi</a>
+    </div>
+    {{/linkQuiz}}
+    <div class="reload">Recommencer le quiz</div>
+</div>

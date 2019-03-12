@@ -1,0 +1,20 @@
+<div class="content__item content__item--unfolded content__item--photo" id="item-{{id}}">
+    {{#image}}
+        <img src="static/upload/{{image}}">
+        <div class="when-folded">
+            {{& title}}
+        </div>
+    {{/image}}
+    {{^image}}
+        <div class="when-folded when-folded--no-image">
+            {{& title}}
+        </div>
+    {{/image}}
+    <div class="when-unfolded">
+        {{& title}}
+        <p>
+            {{& text}}
+        </p>
+        <i class="fa fa-remove"></i>
+    </div>
+</div>

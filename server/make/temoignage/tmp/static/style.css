@@ -1,0 +1,484 @@
+@font-face {
+  font-family: 'syntheselibeweb';
+  src: url('https://statics.liberation.fr/newsite/css/fonts/syntheselibeweb-regular.woff?63585f482767') format('woff'), url('https://statics.liberation.fr/newsite/css/fonts/syntheselibeweb-regular.ttf?c1ec2045c763') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'syntheselibeweb';
+  src: url('https://statics.liberation.fr/newsite/css/fonts/syntheselibeweb-bold.woff?366e30058e2c') format('woff'), url('https://statics.liberation.fr/newsite/css/fonts/syntheselibeweb-bold.ttf?205aecd9c382') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'libesansweb-condensed';
+  src: url('https://statics.liberation.fr/newsite/css/fonts/libesansweb-condensed-regular.woff?7cc5945d0371') format('woff'), url('https://statics.liberation.fr/newsite/css/fonts/libesansweb-condensed-regular.otf?874d87b5daef') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'libesansweb-condensed';
+  src: url('https://statics.liberation.fr/newsite/css/fonts/libesansweb-condensed-light.woff?c8c56272dbc6') format('woff'), url('https://statics.liberation.fr/newsite/css/fonts/libesansweb-condensed-light.otf?50dc3f81cd3f') format('opentype');
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'libesansweb-semicondensed';
+  src: url('https://statics.liberation.fr/newsite/css/fonts/libesansweb-semicondensed-regular.woff?1007eb028bc6') format('woff'), url('https://statics.liberation.fr/newsite/css/fonts/libesansweb-semicondensed-regular.otf?142816fbbbf4') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'libesansweb-semicondensed';
+  src: url('https://statics.liberation.fr/newsite/css/fonts/libesansweb-semicondensed-black.woff?b06e714b33bb') format('woff'), url('https://statics.liberation.fr/newsite/css/fonts/libesansweb-semicondensed-black.otf?3e82823e279f') format('opentype');
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'libetypewriter-regular';
+  src: url('https://statics.liberation.fr/newsite/css/fonts/libetypewriter-regular.woff?fb55328d4888') format('woff'), url('https://statics.liberation.fr/newsite/css/fonts/libetypewriter-regular.otf?9c6e283b484d') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'libetypewriter-regular-underline';
+  src: url('https://statics.liberation.fr/newsite/css/fonts/libetypewriterweb-regularunderline.woff?f534906cd97d') format('woff'), url('https://statics.liberation.fr/newsite/css/fonts/libetypewriterweb-regularunderline.otf?761728e1fc1f') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'libesansweb-black';
+  src: url('https://statics.liberation.fr/newsite/css/fonts/libesansweb-black.woff?6ee0c8d8547f') format('woff'), url('https://statics.liberation.fr/newsite/css/fonts/libesansweb-black.otf?ce9dbbf47e0e') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'libesansrond-regular';
+  src: url('../assets/fonts/libesansrond-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'libesansrond-condensed';
+  src: url('../assets/fonts/libesansrondcondensed-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'libesansrond-condensed';
+  src: url('../assets/fonts/libesansrondcondensed-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+}
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'syntheselibeweb', sans-serif;
+}
+html section,
+body section {
+  padding: 50px;
+}
+html a,
+body a {
+  color: #00bcd4;
+}
+body {
+  background-color: #80deea;
+}
+.head {
+  background-color: #ffffff;
+}
+.head__inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.head__inner h1,
+.head__inner h2 {
+  color: #00bcd4;
+  font-family: 'libesansweb-semicondensed', sans-serif;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.head__inner h1 {
+  margin-top: 0;
+  font-size: 3em;
+  text-align: center;
+}
+.head__inner h2 {
+  margin-bottom: 0;
+  font-family: 'syntheselibeweb', sans-serif;
+  letter-spacing: -0.05em;
+  font-weight: normal;
+  border-bottom: 2px solid #00bcd4;
+}
+.head__inner p {
+  margin: .5em 0;
+}
+.head__inner__more a {
+  color: inherit;
+}
+@media (max-width: 769px) {
+  .head h1 {
+    font-size: 2em;
+  }
+  .head h2 {
+    font-size: 1.2em;
+  }
+}
+.content__inner {
+  max-width: 95%;
+  margin: 0 auto;
+}
+.content__item {
+  width: 23.5%;
+  max-width: 100%;
+  z-index: 50;
+  margin-bottom: 1em;
+  font-family: 'libetypewriter-regular', serif;
+  font-size: 1.5em;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.content__item--sizer {
+  width: 23.5%;
+}
+.content__item--gutter-sizer {
+  width: 2%;
+}
+.content__item--double {
+  width: 49%;
+}
+.content__item--x2 {
+  width: 49%;
+}
+.content__item--folded .when-folded {
+  display: block;
+}
+.content__item--folded .when-unfolded {
+  display: none;
+}
+.content__item--unfolded .when-folded {
+  display: none;
+}
+.content__item--unfolded .when-unfolded {
+  display: block;
+}
+.content__item img {
+  display: block;
+}
+.content__item--simple {
+  padding: 1em;
+  background-color: #00bcd4;
+  color: #fff;
+  border: 5pt solid #fff;
+}
+.content__item--simple--image {
+  background-color: #00bcd4;
+  color: #fff;
+}
+.content__item--simple--image img {
+  width: 100%;
+}
+.content__item--simple--image span {
+  display: block;
+  padding: 1em;
+  text-align: left;
+  font-family: 'syntheselibeweb', sans-serif;
+  font-size: .7em;
+}
+.content__item--photo {
+  background-color: #fff;
+  padding-bottom: .5em;
+  color: #00bcd4;
+}
+.content__item--photo img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.content__item--photo .when-folded {
+  padding: .5em .5em 0 .5em;
+  font-weight: bold;
+}
+.content__item--photo.content__item--folded:hover {
+  border-bottom: 5pt solid #00bcd4;
+}
+.content__item--photo.content__item--unfolded {
+  text-align: left;
+  font-weight: bold;
+}
+.content__item--photo.content__item--unfolded .when-unfolded {
+  padding: .5em 1.5em;
+}
+.content__item--photo.content__item--unfolded img {
+  float: left;
+  max-width: 50%;
+  margin-right: .5em;
+}
+.content__item--photo.content__item--unfolded p {
+  color: #000;
+  font-family: 'syntheselibeweb', sans-serif;
+  font-weight: normal;
+  font-size: .7em;
+}
+.content__item--photo.content__item--unfolded p:last-of-type {
+  margin-bottom: 0;
+}
+.content__item--photo.content__item--unfolded i.fa-remove {
+  position: absolute;
+  top: .1em;
+  right: .2em;
+  color: #00bcd4;
+  cursor: pointer;
+}
+.content__item--tweet {
+  text-align: left;
+  font-size: 1em;
+}
+.content__item--tweet__tweet a {
+  color: #fff;
+}
+.content__item--tweet__tweet,
+.content__item--tweet__img,
+.content__item--tweet__metadata {
+  padding: 1em;
+  background-color: #00bcd4;
+  color: #fff;
+  font-family: 'syntheselibeweb', sans-serif;
+  letter-spacing: -0.05em;
+}
+.content__item--tweet__img {
+  padding-top: 0;
+}
+.content__item--tweet__img img {
+  width: 100%;
+}
+.content__item--tweet__metadata {
+  padding: .9em;
+  border-top: 1.66666667pt dashed #fff;
+}
+.content__item--tweet__metadata a {
+  color: inherit;
+  text-decoration: none;
+}
+.content__item--tweet__from {
+  font-weight: bold;
+}
+.content__item--quote__from,
+.content__item--tweet__from,
+.content__item--instagram__from,
+.content__item--vine__from {
+  height: 2.2em;
+  padding: 0 0 0 .5em;
+  background: #fff;
+  color: #00bcd4;
+  text-align: left;
+}
+.content__item--quote__from img,
+.content__item--tweet__from img,
+.content__item--instagram__from img,
+.content__item--vine__from img {
+  height: 100%;
+  float: right;
+}
+.content__item--quote__from::after,
+.content__item--tweet__from::after,
+.content__item--instagram__from::after,
+.content__item--vine__from::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 25px solid #00bcd4;
+  border-right: 25px solid transparent;
+}
+.content__item--vine,
+.content__item--dailymotion,
+.content__item--youtube {
+  display: none;
+}
+.content__item--quote {
+  border: 5pt solid #fff;
+}
+.content__item--quote__quote {
+  position: relative;
+  padding: 2em .3em;
+  background-color: #00bcd4;
+  color: #fff;
+}
+.content__item--quote__quote::before,
+.content__item--quote__quote::after {
+  position: absolute;
+  font-size: 3em;
+}
+.content__item--quote__quote::before {
+  content: '“';
+  top: 0;
+  left: .1em;
+}
+.content__item--quote__quote::after {
+  content: '”';
+  bottom: -0.6em;
+  right: .1em;
+}
+.content__item--quote__from {
+  height: auto !important;
+  min-height: 1.8em !important;
+  padding-left: 0 !important;
+  padding-right: .1em !important;
+  font-size: .70em;
+  text-align: right;
+}
+.content__item--quote__from::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 25px solid #00bcd4;
+  border-left: 25px solid transparent;
+}
+.content__item--quote__from::after {
+  display: none;
+}
+.content__item--instagram {
+  font-size: 1em;
+}
+.content__item--instagram img {
+  width: 100%;
+}
+.content__item--instagram .content__item--instagram__img {
+  border: 5pt solid #00bcd4;
+}
+.content__item--instagram .content__item--has-iframe__wrapper {
+  border: 5pt solid #00bcd4;
+}
+.content__item--instagram .content__item--has-iframe__wrapper iframe {
+  top: -49px;
+  left: -9px;
+}
+.content__item--vine {
+  font-size: 1em;
+}
+.content__item--vine .content__item--has-iframe__wrapper {
+  border: 5pt solid #00bcd4;
+}
+.content__item--has-iframe__wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.content__item--has-iframe__wrapper iframe {
+  position: absolute;
+  left: -8px;
+}
+@media (min-width: 1921px) {
+  .content__item {
+    width: 18.4%;
+    max-width: 100%;
+  }
+  .content__item--sizer {
+    width: 18.4%;
+  }
+  .content__item--gutter-sizer {
+    width: 2%;
+  }
+  .content__item--double {
+    width: 38.8%;
+  }
+  .content__item--x2 {
+    width: 38.8%;
+  }
+}
+@media (max-width: 1600px) {
+  .content__item {
+    width: 32%;
+    max-width: 100%;
+  }
+  .content__item--sizer {
+    width: 32%;
+  }
+  .content__item--gutter-sizer {
+    width: 2%;
+  }
+  .content__item--double {
+    width: 66%;
+  }
+  .content__item--x2 {
+    width: 66%;
+  }
+}
+@media (max-width: 1280px) {
+  .content__item {
+    width: 49%;
+    max-width: 100%;
+  }
+  .content__item--sizer {
+    width: 49%;
+  }
+  .content__item--gutter-sizer {
+    width: 2%;
+  }
+  .content__item--double {
+    width: 100%;
+  }
+  .content__item--x2 {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    font-size: .9em;
+  }
+  .content__item {
+    width: 100%;
+    max-width: 100%;
+  }
+  .content__item--sizer {
+    width: 100%;
+  }
+  .content__item--gutter-sizer {
+    width: 2%;
+  }
+  .content__item--double {
+    width: 202%;
+  }
+  .content__item--x2 {
+    width: 202%;
+  }
+}
+.primary-fg {
+  color: #00bcd4;
+}
+.strong {
+  font-weight: bold;
+}
+.light {
+  font-weight: normal;
+}
+.large {
+  font-size: 3em;
+}
+.synthese {
+  font-family: 'syntheselibeweb', sans-serif;
+}
+@media (max-width: 769px) {
+  html section,
+  body section {
+    padding: 1em;
+  }
+  html section:first-of-type,
+  body section:first-of-type {
+    padding-top: 2em;
+  }
+}

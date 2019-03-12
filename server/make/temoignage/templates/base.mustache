@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+        <title>Libération.fr – {{& title}}</title>
+
+        <meta name="description" content="Tout savoir sur les dernières actualités politiques, monde, société, sports, écologie avec le journal en ligne Libération.">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+        <meta name="keywords" content="actualités, news">
+
+        <link rel="canonical" href="https://www.liberation.fr/apps/___URL_A_REMPLACER___/">
+        <link rel="shortcut icon" href="https://www.liberation.fr/favicon.ico">
+        <link rel="shortcut icon" href="https://www.liberation.fr/favicon.png">
+
+        <meta property="og:site_name" content="Libération.fr"/>
+        <meta property="og:url" content="https://www.liberation.fr/apps/___URL_A_REMPLACER___/" />
+        <meta property="og:title" content="{{& title}}" />
+        <meta property="og:description" content="{{& txtFacebook}}" />
+        <meta property="og:image" content="https://www.liberation.fr/apps/___URL_A_REMPLACER___/social.jpg" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@libe" />
+        <meta name="twitter:creator" content="@libe" />
+        <meta name="twitter:url" content="https://www.liberation.fr/apps/___URL_A_REMPLACER___/" />
+        <meta name="twitter:title" content="{{& title}}" />
+        <meta name="twitter:description" content="{{& txtTweitter}}" />
+        <meta name="twitter:image" content="https://www.liberation.fr/apps/___URL_A_REMPLACER___/social.jpg">
+
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="//cdn.rawgit.com/desandro/imagesloaded/master/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="//www.liberation.fr/apps/vendor/js/iframeResizer.min.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <link type="text/css" rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        <section class="head">
+            <div class="head__inner">
+                <h1>{{& title}}</h1>
+                <h2>{{& subTitle}}</h2>
+                <p>{{& chapo}}</p>
+                {{#link}}
+                <p class="head__more">
+                    <span class="primary-fg strong">Lire aussi :</span> <a href="{{linkUrl}}">{{& link}}</a>
+                </p>
+                {{/link}}
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="content__inner">
+                {{#items}}
+                    {{#simple}}{{> simple}}{{/simple}}
+                    {{#text}}{{> texte}}{{/text}}
+                    {{#image}}{{> image}}{{/image}}
+                    {{#chiffre}}{{> chiffre}}{{/chiffre}}
+                    {{#citation}}{{> citation}}{{/citation}}
+                    {{#tweet}}{{> tweet}}{{/tweet}}
+                    {{#youtube}}{{> youtube}}{{/youtube}}
+                    {{#dailymotion}}{{> dailymotion}}{{/dailymotion}}
+                    {{#instagram}}{{> instagram}}{{/instagram}}
+                    {{#iframe}}{{> iframe}}{{/iframe}}
+                {{/items}}
+            </div>
+        </section>
+
+        <!-- Header -->
+        <!-- <script type="text/javascript" src="https://www.liberation.fr/menu/script.js"></script> -->
+
+        <script type="text/javascript" src="static/script.js"></script>
+
+        <!-- Chartbeat -->
+        <!--<script type='text/javascript'>
+            var _sf_async_config={};
+            _sf_async_config.uid = 43601;
+            _sf_async_config.domain = 'liberation.fr';
+            _sf_async_config.useCanonical = true;
+            _sf_async_config.sections = "Static";
+            _sf_async_config.authors = "Static";
+            (function(){
+                function loadChartbeat() {
+                    window._sf_endpt=(new Date()).getTime();
+                    var e = document.createElement('script');
+                    e.setAttribute('language', 'javascript');
+                    e.setAttribute('type', 'text/javascript');
+                    e.setAttribute('src', 'https://static.chartbeat.com/' + 'js/chartbeat.js');
+                    document.body.appendChild(e);
+                }
+                var oldonload = window.onload;
+                window.onload = (typeof window.onload != 'function') ?
+                loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>-->
+        <!-- // Chartbeat -->
+
+        <!-- Google Analytics -->
+        <!--<script type="text/javascript">
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         ga('create', 'UA-41822557-1', 'auto');
+         ga('send', 'pageview');
+        </script>-->
+        <!-- // Google Analytics -->
+
+        <!-- Xiti -->
+        <!--<script type="text/javascript">
+            xtnv = document;
+            xtsd = "https://logliberation";
+            xtsite = "381060";
+            xtn2 = "48";
+            xtpage = "Static::Data::";
+            xtdi = "";
+            xt_pagetype = "";
+            xt_multc = "&x1=0&x2=43&x3=&x4=&x5=&x6=7&x7=";
+            xt_an = "";
+            xt_ac = "";
+            if (window.xtparam==null) { window.xtparam = ''; }
+            window.xtparam += "&ptype="+xt_pagetype+"&ac="+xt_ac+"&an="+xt_an+xt_multc;
+        </script>
+        <noscript>
+            <img width="1" height="1" src="https://logliberation.xiti.com/hit.xiti?s=381060&amp;s2=56&amp;p=Static::Data::&amp;di=&amp;" >
+        </noscript>
+        <script type="text/javascript" src="https://statics.liberation.fr/bloom/theme/js/xtcore.js"></script>-->
+        <!-- // Xiti -->
+
+    </body>
+</html>

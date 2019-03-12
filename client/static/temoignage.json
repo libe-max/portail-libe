@@ -1,0 +1,70 @@
+{
+  "id": "",
+  "name": "Nom du projet",
+  "date": "",
+  "title": "Titre du projet",
+  "subTitle": "Sous titre du projet",
+  "chapo": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+  "link": "A lire aussi",
+  "url": "http://www.liberation.fr/",
+  "mainColor": "#3f51b5",
+  "sideColor": "#9fa8da",
+  "social": false,
+  "items": [
+    {
+      "type": "simple",
+      "name": "Titre seul",
+      "icon": "short_text",
+      "title": "Un super titre"
+    },
+    {
+      "type": "text",
+      "name": "Texte",
+      "icon": "art_track",
+      "title": "Un autre titre",
+      "text": "Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam."
+    },
+    {
+      "type": "chiffre",
+      "name": "Chiffre",
+      "icon": "looks_one",
+      "chiffre": "500",
+      "text": "Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."
+    },
+    {
+      "type": "citation",
+      "name": "Citation",
+      "icon": "format_quote",
+      "text": "Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+      "signature": "Liberation"
+    },
+    {
+      "type": "video",
+      "name": "Vidéo",
+      "icon": "ondemand_video",
+      "videoType": "dailymotion",
+      "videoUrl": "http://www.dailymotion.com/video/x5r8db8"
+    },
+    {
+      "type": "video",
+      "name": "Vidéo",
+      "icon": "ondemand_video",
+      "videoType": "dailymotion",
+      "videoUrl": "http://www.dailymotion.com/video/x5r8db8"
+    },
+    {
+      "type": "instagram",
+      "name": "Instagram",
+      "icon": false,
+      "slot": "ion-social-instagram",
+      "instagram": "https://www.instagram.com/p/BX9qQAVAUdt/?hl=fr&taken-by=liberationfr"
+    },
+    {
+      "type": "tweet",
+      "name": "Tweet",
+      "icon": false,
+      "slot": "ion-social-twitter",
+      "tweet": "https://twitter.com/libe/status/900266666797432832"
+    }
+  ]
+}

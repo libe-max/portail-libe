@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+        <title>Libération.fr – {{& name}}</title>
+
+        <meta name="description" content="Tout savoir sur les dernières actualités politiques, monde, société, sports, écologie avec le journal en ligne Libération.">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+        <meta name="keywords" content="actualités, news">
+
+        <link rel="shortcut icon" href="https://www.liberation.fr/favicon.ico">
+        <link rel="shortcut icon" href="https://www.liberation.fr/favicon.png">
+
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="//www.liberation.fr/apps/vendor/js/iframeResizer.contentWindow.min.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="styles/font-awesome.css">
+        <link type="text/css" rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        <div class="indicator">
+            <div class="indicator__inner">
+                <span class="indicator__inner__current"></span>/<span class="indicator__inner__max"></span>
+            </div>
+        </div>
+        <div class="next-button next-button--hidden">continuer</div>
+        <div class="expand-button"><i class="fa fa-expand"></i></div>
+        <div class="overlay-message">
+            <div class="overlay-message-title">Mais encore ?</div>
+        </div>
+        <div id="wrapper">
+            {{#items}}
+                {{> question}}
+            {{/items}}
+            {{> result}}
+        </div>
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="static/quiz.js"></script>
+    </body>
+</html>
