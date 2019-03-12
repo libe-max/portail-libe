@@ -1,1 +1,3 @@
 server/dist/app/*
+server/node_modules
+client/node_modules
