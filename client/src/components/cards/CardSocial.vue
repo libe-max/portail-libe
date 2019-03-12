@@ -49,7 +49,7 @@ export default {
   watch: {
     social (value) {
       if (this.$route.params.id !== 'new') {
-        this.image = 'http://10.14.40.57:8081/app/' + this.$route.params.id + '/static/upload/' + value
+        this.image = 'http://10.14.244.101:8081/app/' + this.$route.params.id + '/static/upload/' + value
         this.name = value
       }
     }

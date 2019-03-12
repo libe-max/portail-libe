@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'http://10.14.40.57:8081/'
+const baseUrl = 'http://10.14.244.101:8081/'
 
 export const httpFiles = axios.create({
   baseURL: baseUrl + 'files/'

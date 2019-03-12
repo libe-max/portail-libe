@@ -324,7 +324,7 @@ export default {
         .then(response => {
           console.log(response.data)
           if (response.data) {
-            var link = 'http://10.14.40.57:8081/tmp/'
+            var link = 'http://10.14.244.101:8081/tmp/'
             if (this.window) {
               this.window.close()
             }
